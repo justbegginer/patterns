@@ -16,6 +16,9 @@ public class FileTest {
         File file = new ReadableFile("find", "200");
         task(file);
         file = new WritableFile("not find", "404");
+        //file = (WritableFile)file.clone();
+        task(file);
+        file = new File("find", "200");
         task(file);
     }
 }
