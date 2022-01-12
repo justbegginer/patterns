@@ -10,5 +10,5 @@ public abstract class EnemyFactory {
         this.attack = attack;
         this.hp = hp;
     }
-    protected abstract Enemy create(Rarity rarity);
+    public abstract Enemy create(Rarity rarity);
 }

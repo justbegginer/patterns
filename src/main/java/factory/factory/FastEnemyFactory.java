@@ -5,7 +5,7 @@ import factory.enemy.rarity_gradation.Enemy;
 import factory.enemy.rarity_gradation.Rarity;
 
 public class FastEnemyFactory extends EnemyFactory {
-    protected FastEnemyFactory() {
+    public FastEnemyFactory() {
         super(20, 25);
     }
 
