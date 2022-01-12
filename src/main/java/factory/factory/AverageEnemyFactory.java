@@ -6,9 +6,10 @@ import factory.enemy.rarity_gradation.Rarity;
 
 public class AverageEnemyFactory extends EnemyFactory {
 
-    protected AverageEnemyFactory(int attack, int hp) {
+    public AverageEnemyFactory() {
         super(10, 50);
     }
+
 
     @Override
     public Enemy create(Rarity rarity) {
