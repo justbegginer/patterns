@@ -3,7 +3,7 @@ package factory.enemy.enemy_types;
 import factory.enemy.rarity_gradation.Common;
 
 public class CommonFastEnemy extends Common {
-    protected CommonFastEnemy(int attack, int hp) {
+    public CommonFastEnemy(int attack, int hp) {
         super(attack, hp);
     }
 

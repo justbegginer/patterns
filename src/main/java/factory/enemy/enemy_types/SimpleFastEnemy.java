@@ -4,8 +4,8 @@ import factory.enemy.rarity_gradation.Enemy;
 import factory.enemy.rarity_gradation.Simple;
 
 public class SimpleFastEnemy extends Simple {
-    public SimpleFastEnemy() {
-        super(20, 50);
+    public SimpleFastEnemy(int attack, int hp) {
+        super(attack, hp);
     }
 
     @Override

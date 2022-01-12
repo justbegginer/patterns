@@ -4,8 +4,8 @@ import factory.enemy.rarity_gradation.Enemy;
 import factory.enemy.rarity_gradation.Simple;
 
 public class SimpleAverageEnemy extends Simple {
-    public SimpleAverageEnemy() {
-        super(10, 100);
+    public SimpleAverageEnemy(int attack, int hp) {
+        super(attack, hp);
     }
 
 
