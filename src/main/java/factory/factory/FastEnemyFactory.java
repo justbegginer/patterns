@@ -23,7 +23,7 @@ public class FastEnemyFactory extends EnemyFactory {
             case LEGENDARY:
                 return new LegendaryFastEnemy(attack, hp);
             default:
-                return null
+                return null;
         }
     }
 }

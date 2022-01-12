@@ -4,28 +4,25 @@ import factory.enemy.enemy_types.*;
 import factory.enemy.rarity_gradation.Enemy;
 import factory.enemy.rarity_gradation.Rarity;
 
-public class AverageEnemyFactory extends EnemyFactory {
-
-    protected AverageEnemyFactory(int attack, int hp) {
-        super(10, 50);
+public class BigEnemyFactory extends EnemyFactory {
+    public BigEnemyFactory(){
+        super(5, 100);
     }
-
     @Override
     public Enemy create(Rarity rarity) {
         switch (rarity){
             case SIMPLE:
-                return new SimpleAverageEnemy(attack, hp);
+                return new SimpleBigEnemy(attack, hp);
             case COMMON:
-                return new CommonAverageEnemy(attack, hp);
+                return new CommonBigEnemy(attack, hp);
             case RARE:
-                return new RareAverageEnemy(attack, hp);
+                return new RareBigEnemy(attack, hp);
             case EPIC:
-                return new EpicAverageEnemy(attack, hp);
+                return new EpicBigEnemy(attack, hp);
             case LEGENDARY:
-                return new LegendaryAverageEnemy(attack, hp);
+                return new LegendaryBigEnemy(attack, hp);
             default:
                 return null;
-
         }
     }
 }
