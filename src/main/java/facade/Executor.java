@@ -18,7 +18,10 @@ public class Executor {
         style.start();
         Thread.sleep(5000);
         style.stop();
-        System.out.println("turn to balanced" );
+        style = new BugFixStyleFacade(crewProject);
+        style.start();
+        Thread.sleep(10000);
+        style.stop();
         style = new BalancedFeaturesStyleFacade(crewProject);
         style.start();
     }
