@@ -21,10 +21,11 @@ public class Project {
         }
         string.append("\u001B[0m");// reset color
         string.append("]");
+        string.append("\u001B[33m");
         string.append(" Total features -> ");
+        string.append("\u001B[0m");// reset color
         string.append(features);
         System.out.println(string);
-        System.out.println(bugs);
 
     }
     public void fixBags(){

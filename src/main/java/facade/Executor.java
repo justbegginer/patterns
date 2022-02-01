@@ -24,5 +24,9 @@ public class Executor {
         style.stop();
         style = new BalancedFeaturesStyleFacade(crewProject);
         style.start();
+        Thread.sleep(10000);
+        style.stop();
+        style = new BugFixStyleFacade(crewProject);
+        style.start();
     }
 }
