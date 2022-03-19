@@ -1,5 +1,8 @@
 package factory.enemy.rarity_gradation;
 
+import lombok.ToString;
+
+@ToString
 public abstract class Enemy implements Person {
     protected int attack, hp;
     protected double multiplier;

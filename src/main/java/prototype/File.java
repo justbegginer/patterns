@@ -1,5 +1,8 @@
 package prototype;
 
+import lombok.ToString;
+
+@ToString
 public class File implements Cloneable{
     private String status, name;
     public File(String status, String name){
@@ -17,11 +20,4 @@ public class File implements Cloneable{
         return new File(this);
     }
 
-    @Override
-    public String toString() {
-        return "File{" +
-                "status='" + status + '\'' +
-                ", name='" + name + '\'' +
-                '}';
-    }
 }

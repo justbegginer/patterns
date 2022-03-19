@@ -1,5 +1,8 @@
 package prototype;
 
+import lombok.ToString;
+
+@ToString(callSuper = true)
 public class WritableFile extends File implements Writable{
 
     public WritableFile(String status, String name) {
@@ -18,10 +21,5 @@ public class WritableFile extends File implements Writable{
     @Override
     public void write() {
         System.out.println("sout");
-    }
-
-    @Override
-    public String toString() {
-        return "WritableFile -> "+super.toString();
     }
 }
