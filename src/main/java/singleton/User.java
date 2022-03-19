@@ -1,5 +1,8 @@
 package singleton;
 
+import lombok.Data;
+
+@Data
 public class User {
     private static User instance;
     private int id,age;
@@ -16,32 +19,5 @@ public class User {
             instance = new User(id, nameFirst, nameSecond, age);
         }
         return instance;
-    }
-
-
-    public int getId() {
-        return id;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public String getNameFirst() {
-        return nameFirst;
-    }
-
-    public String getNameSecond() {
-        return nameSecond;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", age=" + age +
-                ", nameFirst='" + nameFirst + '\'' +
-                ", nameSecond='" + nameSecond + '\'' +
-                '}';
     }
 }
