@@ -1,12 +1,12 @@
 package facade.facades;
 
 import facade.CrewProject;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 
+@AllArgsConstructor(access = AccessLevel.PROTECTED)
 public abstract class Style extends Thread implements StyleInterface {
     protected CrewProject project;
-    protected Style(CrewProject project){
-        this.project = project;
-    }
 
     @Override
     public void run() {

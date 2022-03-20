@@ -1,10 +1,10 @@
 package facade;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class Developer {
     Post post;
-    public Developer(Post post){
-        this.post = post;
-    }
     public int getProductivity(){
         switch (post){
             case Trainee:

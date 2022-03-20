@@ -1,14 +1,13 @@
 package facade;
 
+import lombok.AllArgsConstructor;
+
 import java.util.ArrayList;
 
+@AllArgsConstructor
 public class CrewProject {
     private Project project;
     private ArrayList<Developer> crew;
-    public CrewProject(Project project,ArrayList<Developer> crew){
-        this.project = project;
-        this.crew = crew;
-    }
     public void show(){
         project.show();
     }
